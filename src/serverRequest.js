@@ -39,7 +39,7 @@ checkTextArea.addEventListener("keyup", e => {
   }
 });
 
-sendButton.addEventListener("click", async (event) => {
+sendButton.addEventListener("click", async () => {
   const payload = "name=" + encodeURIComponent(checkTextArea.value);
   try {
     const response = await fetch(`${window.location.origin}/cgi-bin/script.cgi`, {
@@ -57,7 +57,7 @@ sendButton.addEventListener("click", async (event) => {
   }
 });
 
-openButton.addEventListener("click", async (event) => {
+openButton.addEventListener("click", async () => {
   infoTextArea.innerText = EMPTY_STRING;
   try {
     const response = await fetch(`${window.location.origin}/cgi-bin/text.cgi`);
