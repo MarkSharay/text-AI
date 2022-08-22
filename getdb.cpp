@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const char server[] = "myaccount";
+const char server[] = "91.197.0.244";
 const char user[] = "vps_myaccoun";
 const char password[] = "e4VQdVaJ89mJf6Ko51";
 const char database[] = "TEXT_AI";
