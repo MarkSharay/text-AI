@@ -7,7 +7,7 @@
 using namespace std;
 
 const char server[] = "91.197.0.244";
-const char user[] = "vps_myaccoun";
+const char user[] = "admin";
 const char password[] = "e4VQdVaJ89mJf6Ko51";
 const char database[] = "TEXT_AI";
 const char sqlQuery[] = "SELECT Id, Content  FROM EDocs WHERE TypeId IN (2,3);";
