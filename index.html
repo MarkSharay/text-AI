@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TEXT.Ai</title>
+        <meta charset="utf-8">
+        <link href="./src/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <header class="header white-cr">
+            <h1>text.AI</h1>
+            <h2>Intellegent App for text processing</h2>
+        </header>
+        <main>
+            <form class="main-form-original" method="get">
+                <div class="main-form-original-column">
+                    <button id="open" class="main-form-original-submit white-cr button" type="submit">Original</button>
+                    <div id="image" class="image-container">
+                        <div id="opacity"></div>
+                        <div id="result" class="result"></div>
+                    </div>
+                </div>
+                <textarea readonly id="info" class="main-form-original-text" placeholder="Original text"></textarea>
+            </form>
+
+            <form method="post" class="main-form-text-fragment">
+                <div class="main-form-fragment-text-button"><button id="send" class="main-form-text-fragment-submit white-cr button" type="submit">Check</button></div>
+                <textarea id="value" class="main-form-text-fragment-text" placeholder="Input text..."></textarea>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer-logo"><a href="https://devincubator.by"><img src="./src/devlogo.png" height="32"></a>DEVINCUBATOR</div>
+            <div class="footer-description">Mark, Lizaveta 2022</div>
+            <ul class="footer-socials-list">
+                <li class="footer-socials-list-item">
+                    <a href="https://github.com/MarkSharay"><img src="./src/github.png"></a>
+                </li>
+                <li class="footer-socials-list-item">
+                    <a href="https://vk.com"><img src="./src/vk.png"></a>
+                </li>
+                <li class="footer-socials-list-item">
+                    <a href="https://web.facebook.com"><img src="./src/facebook.png"></a>
+                </li>
+            </ul>
+        </footer>
+        <script src="src/particles.js"></script>
+        <script src="src/app.js"></script>
+        <script src="src/serverRequest.js"></script>
+        
+    </body>
+</html>

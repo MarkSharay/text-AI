@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    background-image: url('bg.jpg');
+    margin: 0;
+}
+ul, ol{
+    list-style-type: none;
+}
+
+.white-cr{
+    color: white;
+}
+
+#particles-js{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header *{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+header h1{
+    font-size: 90px;
+    font-weight: 800;
+}
+
+header h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-form-original-submit{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    background: #191F82;
+    border-radius: 9px;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0  4px 4px black;
+    
+}
+.main-form-original{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 10px;
+    gap: 25px;
+}
+.main-form-original-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 250px;
+    gap: 25px;
+}
+
+.main-form-original-text{
+    font-family: 'Exo 2', sans-serif;
+    height: auto;
+    border-radius: 10px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    flex-grow: 1;
+}
+.main-form-original-text::placeholder{
+    font-family: 'Exo 2', sans-serif;
+    color: #B1AFAF;
+}
+
+.main-form-text-fragment{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 25px;
+}
+
+.main-form-text-fragment-submit{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    background: #191F82;
+    border-radius: 9px;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0  4px 4px black;
+    flex-grow: 1;
+}
+.main-form-text-fragment-text{
+    font-family: 'Exo 2', sans-serif;
+    height: auto;
+    border-radius: 10px;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    flex-grow: 1;
+}
+.main-form-text-fragment-text::placeholder{
+    color: #B1AFAF;
+    font-weight: 200;
+}
+
+
+.main-form-fragment-text-button{
+    padding:0px;
+    display: flex;
+    width: 250px;
+    min-width: 250px;
+}
+
+footer{
+    margin-top: 40px;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 3px solid #191F82;
+    align-items: center;
+    padding: 1%;
+}
+.footer-logo{
+    color:#191F82;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.footer-description{
+    color: #5C5C5C;
+    font-size: 24px;
+}
+.footer-socials-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-socials-list li{
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+}
+.footer-socials-list img{
+    width: 40px;
+}
+footer *{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.button:hover{
+    background-color: #7B81E3;
+    transition: 1s;
+}
+.button:active{
+    background-color: #515596;
+}
+
+.image-container{
+    position: relative;
+    height: 151px;
+    width: 250px;
+}
+#opacity{
+    position: absolute;
+    background-color: black;
+    background-image: url("main.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+#image{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#result{
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 9999;
+}
+.opacity{
+    background-color: transparent;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+@media (min-width: 560px) and (max-width: 728px) {
+    header h1{
+        font-size: 60px;
+        font-weight: 800;
+    }
+    
+    header h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .footer-socials-list{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-description{
+        width: 250px;
+        text-align: center;
+    }
+    main{
+        width: 90%;
+
+    }
+    footer{
+        width: 88%;
+    }
+}
+
+@media (max-width: 559px){
+    body{
+        background-size: cover;
+    }
+    header h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    header h2{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-form-original{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 25px;
+    }
+    .main-form-original-text{
+        width:250px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+    .main-form-original-column{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-form-text-fragment{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+    .main-form-fragment-text-button{
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .main-form-text-fragment-text{
+        width:250px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+    footer{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.85;
+        width: 250px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer *{
+        margin: 0;
+    }
+    .footer-socials-list{
+        gap: 5px;
+        margin-top: 15px;
+        padding: 0;
+    }
+    .footer-logo{
+        margin-bottom: 15px;
+    }
+    .footer-description{
+        width: auto;
+    }
+}
