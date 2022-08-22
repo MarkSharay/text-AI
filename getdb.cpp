@@ -8,8 +8,8 @@ using namespace std;
 
 const char server[] = "myaccount";
 const char user[] = "vps_myaccoun";
-const char password[] = "H528LqbV";
-const char database[] = "TextAIDatabase";
+const char password[] = "e4VQdVaJ89mJf6Ko51";
+const char database[] = "TEXT_AI";
 const char sqlQuery[] = "SELECT Id, Content  FROM EDocs WHERE TypeId IN (2,3);";
 
 string getDb()
