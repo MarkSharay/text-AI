@@ -228,7 +228,7 @@ footer *{
     opacity: 0.6;
 }
 
-@media only screen and (max-width: 728px) {
+@media screen and (max-width: 728px) {
     header h1{
         font-size: 60px;
         font-weight: 800;
@@ -259,7 +259,7 @@ footer *{
     }
 }
 
-@media only screen and (max-width: 559px){
+@media screen and (max-width: 559px){
     body{
         background-size: cover;
     }
